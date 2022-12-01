@@ -1,0 +1,108 @@
+/* header */
+body {
+    margin: auto;
+    text-align: center;
+  }
+  h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#ff0000;
+    font-size: 30pt;
+    text-shadow: 2px 2px darkgray;
+  }
+  
+  /* clock */
+  #clockFace {
+    width: 450px;
+    height: 450px;
+    border: 8px solid black;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    background-color: white;
+  }
+  
+  .hours {
+    color: black;
+    --change: 0;
+    font-size: xx-large;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--change));
+  }
+  
+  #centerDot {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top:47%;
+    right: 47%;
+  }
+  
+  #one { 
+    --change: 30deg; 
+  }
+  #two { 
+    --change: 60deg; 
+  }
+  #three { 
+    --change: 90deg; 
+  }
+  #four { 
+    --change: 120deg; 
+  }
+  #five { 
+    --change: 150deg; 
+  }
+  #six { 
+    --change: 180deg; 
+  }
+  #seven { 
+    --change: 210deg; 
+  }
+  #eight { 
+    --change: 240deg; 
+  }
+  #nine { 
+    --change: 270deg; 
+  }
+  #ten { 
+    --change: 300deg; 
+  }
+  #eleven { 
+    --change: 330deg; 
+  }
+  #twelve {
+    --change: 360deg;
+  }
+  
+  .hands {
+    --change: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: rotate(calc(var(--rotation) * 1deg));
+  }
+  
+  #secHand {
+    width: 3px;
+    height: 40%;
+    background-color: red;
+  }
+  
+  #minHand {
+    width: 5px;
+    height: 40%;
+    background-color: red;
+  }
+  
+  #hourHand {
+    width: 7px;
+    height: 25%;
+    background-color: red;
+  }
