@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: "B612", sans-serif;
+    background-color: #532a7f;
+    color: #fff;
+    font-size: 16px;
+}
+  
+h1 {
+    width: 100%;
+    padding-top: 1em;
+    font-size: 3em;
+    text-align: center;
+    font-family: "Archivo", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 800px;
+}
+
+.mix {
+    padding: 0 3em;
+    margin: 0;
+    list-style: none;
+    border: 3px solid #fff;
+}
+
+.mix a {
+  display: block;
+  padding: 5px;
+  background-color:chocolate;
+  font-size: 0.8em;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+  
+.hide {
+    display: none;
+}
+  
+.total {
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+}
+
+.mix .song {
+    padding: 0.5em;
+    margin: 0.75em 0;
+    font-size: 1em;
+}
+  
+.mix .song-number {
+    display: inline-block;
+    padding: 0.45em;
+    margin-right: 0.25em;
+    background-color: #9634ff;
+}
+
+.song img {
+  width: 36px;
+}
+
+.song-number { 
+  width: 25%;
+}
+
+.song-name { 
+  width: 100%;
+}
+
+.song-watch { 
+  width: 30%;
+  font-size: 0.7em;
+}
+  
+button {
+    margin: 2em 0;
+    width: 25%;
+    padding: 1em;
+    color: #532a7f;
+    font-size: 1.25em;
+    align-self: center;
+  }
+  
+@media screen and (min-width: 800px) {
+    .mix .song {
+      width: 50%;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .song-number { 
+      width: 15%;
+    }
+    
+    .song-name { 
+      width: 60%;
+    }
+    
+    .song-watch { 
+      width: 25%;
+      font-size: 0.7em;
+    }
+
+}
